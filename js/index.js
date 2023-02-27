@@ -11,6 +11,18 @@
 10.	Realizar la carga de las variables del punto 1 al 5 utilizando prompt() y luego ejecutar el código correspondiente para realizar los puntos del 6 al 9 con los datos cargados.
 11.	Crear un objeto llamado alumno con un mínimo de 5 propiedades, mostrar dicho objeto utilizando console.table() y también mostrar cada una de las propiedades del objeto por separado.
 12.	Crear un objeto llamado mascota con un mínimo de 5 propiedades, mostrar dicho objeto utilizando console.table() y también mostrar cada una de las propiedades del objeto por separado.
+13.	Crear un array llamado frutas con un mínimo de 5 elementos y mostrar por consola el array completo y cada uno de los elementos por separado.
+14.	Crear un array llamado números con un mínimo de 5 elementos y mostrar por consola el array completo y cada uno de los elementos por separado.
+15.	Crear un array llamado familia con un mínimo de 5 objetos y mostrar por consola el array completo y cada uno de los elementos por separado.
+16.	Crear una variable llamada textoAleatorio formando una frase con el segundo elemento del array del punto 13, el cuarto elemento del punto 14 y el quinto objeto del array del punto 15.
+17.	Utilizar prompt() para leer por pantalla mi edad y la edad de un compañero y mostrar por consola los resultados de comparar los valores y guardarlos en variables llamadas por ejemplo: edadesIguales, soyMayor, soyMenor, etc. Y mostrar mensajes en consola como los siguientes:
+a.	Mi edad es igual a la de mi compañero: false
+b.	Mi edad es mayor a la de mi compañero: true
+c.	Mi edad es menor a la de mi compañero: false
+18.	Compare su edad ingresada por pantalla con prompt() con el numero 18 y guardarlo en una variable llamada soyMayorDeEdad y mostrar por consola un mensaje que diga: Soy mayor de edad y el valor de la variable.
+19.	Introducir por pantalla la edad y la altura de una persona y guardarlas en variables separadas y en una variable llamada puedeSubir el resultado de la operación resultante de si la persona es mayor de 6 años y además tiene una altura mínima de 120cm y mostrar por consola un mensaje como el siguiente: Puede subir a la atracción y el valor de la variable resultante.
+20.	Introducir por pantalla el pase de una persona el cual puede ser “VIP”, “NORMAL” o “LIMITADO”, el saldo que dispone y guardarlos en variables separadas. En una variable llamada puedePasar guardar el resultado de la operación resultante de si la persona tiene pase “VIP” o si posee un saldo mayor a 1000. Mostrando un mensaje que diga: La persona puede pasar y el resultado de la variable.
+
 
 */
 
@@ -61,6 +73,53 @@ console.log(`${sumaEdades}, ${restaEdades}, ${productoEdades}, ${divisionEdades}
 console.table(alumno);
 console.table(mascota);
 
+/* --------------------------------*/
+//13
+let frutas =["peras","manzanas","ciruelas","uvas","anana"];
+let nums =[1,2,3,4,5];
+let madre =  { nombre: "Maria", edad: 45, ocupacion: "Ama de casa" };
+let padre = { nombre: "Juan", edad: 50, ocupacion: "Albañil" };
+let hermano = { nombre: "Miguel", edad: 22, ocupacion: "Estudiante" };
+let hermana1 = { nombre: "Marlen", edad: 22, ocupacion: "Estudiante" };
+let hermana2 = { nombre: "Celia", edad: 25, ocupacion: "Reclutadora de talentos" };
+let familia = [madre,padre,hermano,hermana1,hermana2]
+let textoAleatorio = `Me gustan las ${frutas[1]}, creo que mi numero de la suerte es ${nums[3]} y mi hermana favoritas es ${familia[4].nombre}`
+//input = prompt("Ingrese ingrese su edad y la de su compañero separado por comas y en ese orden");
+//let edades= input.split(",");
+//edad1 = parseInt(edades[0]);
+//edad2 = parseInt(edades[1]);
+//let soyMayorDeEdad = edad1 >= 18;
+/*let edadesIguales = edad1 == edad2;
+let soyMayor = edad1 > edad2;
+let soyMenor = edad1 < edad2;*/
+
+/*input = prompt("Ingrese ingrese su edad y su altura en centimetros separado por comas y en ese orden");
+let datos= input.split(",");
+edad = parseInt(datos[0]);
+altura = parseInt(datos[1]);
+let puedeSubir = edad >6 && altura >= 120;*/
+input = prompt("Ingrese ingrese su tipo de pase  y su saldo separado por comas y en ese orden");
+let pases= input.split(",");
+let pase = pases[0];
+let saldo = parseInt(pases[1]);
+let puedePasar = pase =="vip" || saldo >1000;
+
+
+
+
+console.log(frutas);
+console.log(frutas[0], frutas[1], frutas[2], frutas[3], frutas[4]);
+console.log(nums);
+console.log(nums[0], nums[1], nums[2], nums[3], nums[4]);
+console.log(familia);
+console.log(familia[0], familia[1], familia[2], familia[3], familia[4]);
+console.log(textoAleatorio);
+//console.log(edades);
+//console.log(`a.	Mi edad es igual a la de mi compañero: ${edadesIguales}. b.	Mi edad es mayor a la de mi compañero: ${soyMayor}. c.	Mi edad es menor a la de mi compañero: ${soyMenor}`)
+//console.log(`Soy mayor de edad?: ${soyMayorDeEdad}`)
+//console.log(`Puede subir a la atracción?: ${puedeSubir}`);
+console.log(`Puede pasar?: ${puedePasar}`);
+/*Estructuras de control*/
 
 
 
