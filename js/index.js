@@ -98,12 +98,13 @@ let datos= input.split(",");
 edad = parseInt(datos[0]);
 altura = parseInt(datos[1]);
 let puedeSubir = edad >6 && altura >= 120;*/
+/*
 input = prompt("Ingrese ingrese su tipo de pase  y su saldo separado por comas y en ese orden");
 let pases= input.split(",");
 let pase = pases[0];
 let saldo = parseInt(pases[1]);
 let puedePasar = pase =="vip" || saldo >1000;
-
+*/
 
 
 
@@ -118,7 +119,11 @@ console.log(textoAleatorio);
 //console.log(`a.	Mi edad es igual a la de mi compañero: ${edadesIguales}. b.	Mi edad es mayor a la de mi compañero: ${soyMayor}. c.	Mi edad es menor a la de mi compañero: ${soyMenor}`)
 //console.log(`Soy mayor de edad?: ${soyMayorDeEdad}`)
 //console.log(`Puede subir a la atracción?: ${puedeSubir}`);
-console.log(`Puede pasar?: ${puedePasar}`);
+//console.log(`Puede subir a la atracción?: ${puedeSubir}`);
+
+
+
+/*-----------------------------------------------------------------*/
 /*Estructuras de control*/
 
 
