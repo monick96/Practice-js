@@ -102,3 +102,205 @@ if (divisores>2){
 */
 
 /*5 */
+/*
+alert("bienvenido, vamos a averguar todos los divisores del numero que elijas!")
+let num = parseInt(prompt("Ingrese un numero: "))
+let divisores = []
+*/
+/*
+La expresión Math.floor(Math.sqrt(numero)) se utiliza para obtener el número entero más grande menor o igual a la raíz cuadrada de numero. Esto es útil porque, como mencioné anteriormente, cualquier divisor que sea mayor que la raíz cuadrada del número tiene un cociente que es menor que la raíz cuadrada, y por lo tanto ya ha sido comprobado.
+
+for (i=1;i<= Math.floor(Math.sqrt(num));i++){
+    if(num % i === 0){
+        divisores.push(i)
+    }
+    if (i !== num / i) {
+        divisores.push(num / i);
+    }
+}
+*/
+/*
+for (i=1;i<= 100;i++){
+    if(num % i === 0){
+        divisores.push(i)
+    }
+}
+console.log(divisores);
+*/
+/*6*/
+/*
+let animales = ["perro", "gato", "conejo", "tigre", "elefante", "león", "jirafa", "mono", "oso", "hipopótamo"];
+
+for (animal in animales){
+    console.log(animales[animal])
+}
+*/
+
+/*7 */
+/*
+let nums = [1,2,3,4,5,6,7,8,9,10]
+for(num in nums){
+    console.log(nums[num]*2)
+}
+*/
+/*8 */
+/*
+let family = [
+    { rol: "madre", nombre: "Maria", edad: 45, ocupacion: "Ama de casa", signo: "geminis"},
+    { rol: "padre", nombre: "Juan", edad: 50, ocupacion: "Albañil", signo: "cancer" },
+    { rol: "hijo", nombre: "Miguel", edad: 22, ocupacion: "Estudiante", signo: "Escorpio" },
+    { rol: "hija", nombre: "Marlen", edad: 22, ocupacion: "Estudiante", signo: "Escorpio" },
+    { rol: "hija", nombre: "Celia", edad: 25, ocupacion: "Reclutadora de talentos", signo: "Virgo" }
+] 
+console.log(family[0])
+for(i=0;i<family.length;i++){
+    console.log(`el nombre del/la ${(family[i].rol)} es ${family[i].nombre}, tiene ${family[i].edad}, es ${family[i].ocupacion}, su signo es ${family[i].signo} `)
+}
+*/
+/*9 */
+/*
+let nums = [1,2,3,4,5,6,7,8,9,10]
+for (i=0;i<nums.length;i++){
+    if(nums[i]%2 !==0){
+        console.log(nums[i])
+    }
+    
+}
+*/
+/*10 */
+/*
+let input= parseInt(prompt("Ingrese un numero"))
+let nums=[]
+let par = [];
+let inpar = [];
+let suma_par = 0
+let suma_inpar = 0
+while(input !==0){
+    nums.push(input)
+    input= parseInt(prompt("Ingrese un numero"))
+}
+
+for (i=0;i<nums.length;i++){
+    if(nums[i]%2 === 0){
+        par.push(nums[i])
+        suma_par += nums[i]
+    }else {
+        inpar.push(nums[i])
+        suma_inpar += nums[i]
+    }
+}
+console.log(par);
+console.log(inpar);
+console.log(`la suma de los numeros pares ingresados es: ${suma_par}`);
+console.log(`la suma de los numeros inpares ingresados es: ${suma_inpar}`);
+*/
+/*11 */
+/*
+
+let nums = [50,2,3,4,5,6,7,8,9,100]
+let mayor = 0;
+for (i=0;i<nums.length;i++){
+    if(nums[i]>mayor){
+        mayor = nums[i]
+    }
+}
+console.log(`el mayor numero es ${mayor}`)
+*/
+/*12 */
+/*
+let nums = [50,2,3,4,5,6,7,8,9,100]
+let menor = nums[0]
+
+for (i=1;i<nums.length;i++){
+    if(nums[i]<menor){
+        menor = nums[i]
+    }
+}
+console.log(`el menor numero es ${menor}`)
+*/
+/*13 */
+/*
+let player1 = prompt("ingrese su nombre jugador numero 1: ")
+let player2 = prompt("ingrese su nombre jugador numero 2: ")
+alert("Bienvenidos al piedra, papel o tiejera, a jugar!..")
+let resp1 = prompt(`${player1} ingrese su eleccion: `)
+let resp2 = prompt(`${player2} ingrese su eleccion: `)
+resp = ["piedra","papel","tijera"]
+
+while(resp1 === resp2){
+    console.log('empate!')
+    resp1 = prompt(`${player1} ingrese su eleccion: `)
+    resp2 = prompt(`${player2} ingrese su eleccion: `)
+}
+
+if(resp1 == resp[0] && resp2 == resp[2]){
+    console.log(`${player1} gana!`)
+}else if(resp1 == resp[2] && resp2 == resp[1]){
+    console.log(`${player1} gana!`)
+}else if(resp1 == resp[1] && resp2 == resp[0]){
+    console.log(`${player1} gana!`)
+}else if(resp2 == resp[0] && resp1 == resp[2]){
+    console.log(`${player2} gana!`)
+}else if(resp2 == resp[2] && resp1 == resp[1]){
+    console.log(`${player2} gana!`)
+}else if(resp2 == resp[1] && resp1 == resp[0]){
+    console.log(`${player2} gana!`)
+}else if (resp1 !== resp[0] || resp1 !== resp[1] || resp1 !== resp[2] || resp2 !== resp[0] || resp2 !== resp[2] || resp2 !== resp[2] ){
+    console.log("Alguno de los jugadores hizo trampa")
+}
+*/
+/*14 */
+/*let altura =5;
+for (fila=1; fila<=altura;fila++){
+    let asterisck = "";
+    for(i=1;i<=fila;i++){
+        asterisck += "*";
+    }
+
+console.log(asterisck);
+}
+*/
+/*15 */
+let altura =5;
+for (fila=altura; fila>=1;fila--){
+    let asterisck = "";
+    for(i=1;i<=fila;i++){
+        asterisck += "*";
+    }
+
+console.log(asterisck);
+}
+
+
+/*16 */
+/*
+let nums = [1,8,12,4,6,9];
+order_nums= [];
+// Recorremos el array de números desordenados con un ciclo for
+for (i=0;i<nums.length; i++){
+    // Recorremos el array de números ordenados con otro ciclo for
+    for (j = 0; j < order_nums.length; j++){
+        // Si el número actual es menor que el número en la posición j del array ordenado, lo insertamos en esa posición
+        if (nums[i] < order_nums[j]) {
+            order_nums.splice(j, 0, nums[i]);
+            break;
+        }
+    }
+    // Si llegamos al final del array ordenado y no se insertó el número, lo agregamos al final
+    if (j === order_nums.length) {
+        order_nums.push(nums[i]);
+    }
+} 
+console.log(order_nums);
+*/
+
+
+
+
+
+
+
+
+
+
+
