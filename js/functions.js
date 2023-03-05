@@ -180,5 +180,9 @@ function porcentaje_sexo(array){
     return [porc_hombres,porc_mujeres]
 
 }
+/*
+result = porcentaje_sexo(datos)
 
-console.log(porcentaje_sexo(datos))
+console.log(`Porcentaje de hombres: ${result[0]}%`);
+console.log(`Porcentaje de mujeres: ${result[1]}%`);
+*/
