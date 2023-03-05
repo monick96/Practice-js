@@ -261,6 +261,7 @@ console.log(asterisck);
 }
 */
 /*15 */
+/*
 let altura =5;
 for (fila=altura; fila>=1;fila--){
     let asterisck = "";
@@ -270,7 +271,7 @@ for (fila=altura; fila>=1;fila--){
 
 console.log(asterisck);
 }
-
+*/
 
 /*16 */
 /*
@@ -293,6 +294,25 @@ for (i=0;i<nums.length; i++){
 } 
 console.log(order_nums);
 */
+
+//14
+alt = 5;
+cuerpo = ""
+// console.log("*")
+// console.log("**")
+// console.log("***")
+// console.log("****")
+// console.log("*****")
+while(cuerpo.length < alt){
+    cuerpo += "*";
+    //console.log(cuerpo)
+}
+
+cuerpo2 = "123456"
+while(cuerpo2.length >1){
+    cuerpo2 = cuerpo2.substring(0, cuerpo2.length -1);
+    console.log(cuerpo2)
+}
 
 
 
