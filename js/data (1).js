@@ -172,16 +172,17 @@ var data = {
     ]
   };
 
-  
+  /*
   /* separa fecha de referencia para comprar futuro y pasado*/
-  fecha_referencia = new Date(data.currentDate)
-  console.log(fecha_referencia)
+ // fecha_referencia = new Date(data.currentDate)
+  //console.log(fecha_referencia)
   //separo solo los eventos
-  events = data.events;
+ // events = data.events;
   //genero dos arrays para eventos futuros y pasados
-  past_events = []
-  future_events =[]
+ // past_events = []
+ // future_events =[]
   //for que realiza la separacion
+  /*
   for (i =0; i<events.length; i++){
     let date_event = new Date(events[i].date)
     if(date_event > fecha_referencia){
@@ -193,6 +194,8 @@ var data = {
   console.log(events)
   console.log(past_events)
   console.log(future_events)
+*/
+
 
 
   
