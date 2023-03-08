@@ -17,6 +17,7 @@ function do_cards(array){
     return structure_card;
 }
 
+///made with impetrative paradigm
 // past events filter
 function filter_events_past(actual_date,array){
     
@@ -42,3 +43,5 @@ function filter_events_future(actual_date,array){
     }
     return events;
 }
+
+///made with functional paradigm

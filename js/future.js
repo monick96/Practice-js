@@ -10,6 +10,8 @@
 //     return events;
 // }
 
+///made with impetrative paradigm
+
 // Assigns the events property of the data object to the variable all_events.
 let all_events = data.events;
 
@@ -36,3 +38,6 @@ let future_cards = do_cards(future_events);
 
 // Sets the HTML content of the contenedor_card element to the value of the future_cards variable.
 contenedor_card.innerHTML = future_cards;
+
+
+///made with functional paradigm

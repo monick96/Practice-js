@@ -1,3 +1,4 @@
+///made with impetrative paradigm
 const all_events = data.events;
 //console.log(all_events)
 
@@ -64,3 +65,5 @@ for (let i = 0; i < all_events.length; i++) {
 //     </div>
 // </div>
 // `;
+
+///made with functional paradigm

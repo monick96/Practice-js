@@ -1,3 +1,4 @@
+///made with impetrative paradigm
 // function filter_events_past(actual_date,array){
     
 //     events = [];
@@ -18,3 +19,5 @@ console.log(past_events);
 let contenedor_card = document.getElementById("col-card-past");
 let past_cards = do_cards(past_events);
 contenedor_card.innerHTML = past_cards;
+
+///made with functional paradigm
