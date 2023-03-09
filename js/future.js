@@ -1,27 +1,13 @@
-// function filter_events_future(actual_date,array){
-    
-//     events = [];
-//     for (i =0; i<array.length; i++){
-//         let date_event = new Date(array[i].date)
-//         if(date_event > actual_date){
-//             events.push(array[i])
-//         }
-//     }
-//     return events;
-// }
 
-///made with impetrative paradigm
-
-// Assigns the events property of the data object to the variable all_events.
 let all_events = data.events;
 
 // Creates a new date object with the value of the currentDate property of the
 // data object, and assigns it to the variable current_day.
-current_day = new Date(data.currentDate);
+current_day = data.currentDate;
 
 // Calls the filter_events_future function passing in current_day and all_events as arguments,
 // and assigns the returned value to the variable future_events.
-future_events = filter_events_future(current_day, all_events);
+future_events = filter_future_events(current_day, all_events);
 
 // Logs the value of future_events to the console.
 console.log(future_events)

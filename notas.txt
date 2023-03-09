@@ -1,1 +1,9 @@
 for each para cards, hacerla funcion
+agregar dates a las tarjetas
+
+✔ Cada card en home, upcoming y past tiene que tener un botón que redirija a su card detail correspondiente.
+
+👉datos de cada card: image, name, description, date, price, button (see more or detail).
+👉datos de cada card detail: image, name, description, date, price, category, capacity, assistanse/estimate.
+
+✔ Permitir filtrar las cards por  checkboxes y por input  search. (de manera individual y combinada)

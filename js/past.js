@@ -1,23 +1,13 @@
-///made with impetrative paradigm
-// function filter_events_past(actual_date,array){
-    
-//     events = [];
-//     for (i =0; i<array.length; i++){
-//         let date_event = new Date(array[i].date)
-//         if(date_event < actual_date){
-//             events.push(array[i])
-//         }
-//     }
-//     return events;
-// }
-
 let all_events = data.events;
-current_day= new Date(data.currentDate);
+current_day= data.currentDate;
+let contenedor_card = document.getElementById("col-card-past");
 
 past_events= filter_events_past(current_day,all_events);
-console.log(past_events);
-let contenedor_card = document.getElementById("col-card-past");
-let past_cards = do_cards(past_events);
-contenedor_card.innerHTML = past_cards;
+//console.log(past_events);
 
-///made with functional paradigm
+//cual forma es mejor de asignar la funcion primero guerdandolo en una variable y depus hacer el inner o directamente asignar con el inner a la funcion
+//let past_cards = do_cards(past_events);
+//contenedor_card.innerHTML = past_cards;
+//o
+contenedor_card.innerHTML = do_cards(past_events);
+
