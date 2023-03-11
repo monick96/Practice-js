@@ -195,7 +195,13 @@ var data = {
   console.log(past_events)
   console.log(future_events)
 */
-
+//all_events = data.events;
+//let all_categories = all_events.map((evento)=>evento.category)
+// let unic_categories = all_categories.filter((category,position,all_categories)=>{
+//  return position === all_categories.indexOf(category);
+// })
+//console.log(all_categories)
+//console.log(unic_categories);
 
 
   

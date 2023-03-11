@@ -40,6 +40,26 @@ let do_cards = (array) =>{
     return structure_card;
 }
 
+let do_categories = (array)=>{
+    let structure = ""
+    array.forEach((el)=>{
+        structure += `
+        <label for="${el}"><input type="checkbox" id="${el}" name="${el}">${el}</label>
+        `
+    })
+    return structure
+}
+let do_categories_select = (array)=>{
+    let structure = ""
+    array.forEach((el)=>{
+        structure += `
+        <option value="">Select a category</option>
+        <option value="${el}">${el}</option>
+        `
+    })
+    return structure
+}
+
 // past events filter
 /*
 function filter_events_past(actual_date,array){
@@ -62,8 +82,8 @@ let filter_events_past = (actual_date,array)=>{
 const todos_eventos= data.events;
 //console.log(todos_eventos);
 const reference_date = data.currentDate;
-console.log(reference_date);
-console.log(filter_events_past(reference_date,todos_eventos));
+//console.log(reference_date);
+//console.log(filter_events_past(reference_date,todos_eventos));
 
 //future events filter
 /*
@@ -85,4 +105,25 @@ let filter_future_events = (actual_date,array)=>{
     return array.filter(el=> actual_date<el.date);
 }
 
-console.log(filter_future_events(reference_date,todos_eventos));
+//obtein all categories
+//let all_categories = all_events.map((evento)=>evento.category)
+let obtein_property = (array,property)=>array.map(el => el[property]);
+
+//console.log(filter_future_events(reference_date,todos_eventos));
+//filtro categoria.
+let filter_unic_property = (array) => {
+    return array.filter((category, position, array) => {
+        return position === array.indexOf(category);
+    });
+}
+// let filter_category_events = (category,array,position)=>{
+//     let filtered = array.filter((category,position,array)=>{
+//         return position === array.indexOf(category);
+// })
+// return filtered
+
+// }
+
+// function filter_category_events(array){
+
+// }

@@ -7,3 +7,49 @@ agregar dates a las tarjetas
 👉datos de cada card detail: image, name, description, date, price, category, capacity, assistanse/estimate.
 
 ✔ Permitir filtrar las cards por  checkboxes y por input  search. (de manera individual y combinada)
+
+mail a events
+De: Paula Davis Asunto: Bienvenida y Primeros Pasos
+
+Hola de nuevo,
+
+Amazing Events, solicitan que incorporemos filtros en el
+
+proyectos, 
+✔requieren un filtro de búsqueda por texto y 
+✔filtros por categorías de eventos. 
+✔Los filtros deben incorporarse en la página de Inicio, Eventos Pasados y Eventos Futuros.
+
+✔Además, requieren que también se pueda utilizar el detalle del evento.
+
+Con tus habilidades confiamos en que puedas lograrlo.
+
+Gracias,
+
+Paula Paula Davis Jefe de equipo Código de la web
+
+
+Sugerencias
+
+🆗Incorpore entradas de búsqueda y casillas de categoría en sus páginas Inicio, Eventos pasados ​​y Eventos futuros. 
+Le sugerimos que comience con la entrada de búsqueda, capturando los datos que el usuario escribe en este, ordenando la cadena que capturó y pasándola a minúsculas, luego filtre estos datos con el
+
+nombre del evento del archivo de datos también pasado a minúsculas para comparar valores iguales y
+
+finalmente guarde la matriz resultante del filtro para mostrarla en su html
+
+Para las casillas de verificación, le recomendamos que extraiga las categorías dinámicamente del archivo de datos del evento, elimine las repetidas para obtener un valor único para cada una y luego, con la matriz resultante del filtro, visualícela en su html.
+
+Para que los filtros funcionen combinados, defina condicionales que evalúen si la entrada tiene un valor o si las casillas de verificación están marcadas.
+
+Entrega
+
+Incorpore filtros para cada búsqueda de entradas y casillas de verificación para cada categoría. Los filtros deben funcionar de forma independiente y combinada.
+
+En caso de que no se encuentre ningún evento con los filtros, se debe solicitar al usuario que ajuste los filtros para
+
+encontrar un evento.
+
+Los filtros deben estar presentes en las páginas Inicio, Eventos pasados ​​y Eventos futuros.
+
+Al hacer clic en la tarjeta de evento, se debe mostrar el evento en el que se hizo clic en la página Detalles.
