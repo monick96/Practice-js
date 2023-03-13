@@ -55,6 +55,14 @@ function puzzle(n){
 
     return nums.d% 10000000000
 }
+
 console.log(puzzle(10));
 console.log(puzzle(100));
-//console.log(puzzle(Math.pow(2022,100)));
+//const BigNumber = require('bignumber.js');
+//const num = new BigNumber('3.7854291794289350733630628154912e+330');
+//console.log(puzzle(num))
+//const result = puzzle(Math.pow(2022,100));
+//let result =Math.pow(2022,100)
+//console.log(result.toExponential());
+//console.log(result.toExponential());
+//usar tofix() para los decimales

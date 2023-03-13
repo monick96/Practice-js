@@ -14,16 +14,17 @@ console.log(future_events)
 
 // Assigns the DOM element with the ID "col-card-future" to the contenedor_card constant.
 const contenedor_card = document.getElementById("col-card-future");
+do_and_print(future_events,contenedor_card);
 
 // Logs the value of contenedor_card to the console.
-console.log(contenedor_card)
+//console.log(contenedor_card)
 
 // Calls the do_cards function, passing in the array of future events as an argument, 
 // and assigns the returned value to the variable future_cards.
-let future_cards = do_cards(future_events);
+//let future_cards = do_cards(future_events);
 
 // Sets the HTML content of the contenedor_card element to the value of the future_cards variable.
-contenedor_card.innerHTML = future_cards;
+//contenedor_card.innerHTML = future_cards;
 
 
 ///made with functional paradigm

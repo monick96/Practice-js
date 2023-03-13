@@ -30,14 +30,18 @@ let do_cards = (array) =>{
             <div class="card-body">
                 <h5 class="card-title">${el.name}</h5>
                 <p class="card-text">${el.description}</p>
-                <p><span>Price: ${el.price}</span></p>
+                <p><span>Price: $${el.price}</span></p>
                 <p><span>Date: ${el.date}</span></p>
-                <p class="button" role="button"><a href="#">More...</a></p>
+                <p class="button" role="button"><a href ="./details.html?id=${el.id}">More...</a></p>
             </div>
         </div>
         `;
     });
     return structure_card;
+}
+
+let do_and_print = (array,container)=>{
+    return container.innerHTML = do_cards(array)
 }
 
 let do_categories = (array)=>{

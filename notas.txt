@@ -1,5 +1,13 @@
+
+details
+a href= "./details.html?id=${info.id}"
+
+
 for each para cards, hacerla funcion
 agregar dates a las tarjetas
+-verificar las mayusculas en las constantes
+-optimizar funciones
+-no puedo borrar los mensajes de error en cada entrada nueva// probar con poner a regargar la web osea ponerle la direcccion del html
 
 ✔ Cada card en home, upcoming y past tiene que tener un botón que redirija a su card detail correspondiente.
 
