@@ -25,7 +25,7 @@ let do_cards = (array) =>{
     let structure_card = "";
     array.forEach((el) => {
         structure_card += `
-        <div class="card ">
+        <div class="card " data-id ="${el.category}">
             <img src="${el.image}" class="card-img-top" alt="${el.name}">
             <div class="card-body">
                 <h5 class="card-title">${el.name}</h5>
@@ -46,9 +46,9 @@ let do_and_print = (array,container)=>{
 
 let do_categories = (array)=>{
     let structure = ""
-    array.forEach((el)=>{
+    array.forEach((el,index)=>{
         structure += `
-        <label for="${el}"><input type="checkbox" id="${el}" name="${el}">${el}</label>
+        <label for="${el}"><input type="checkbox" name="category${el.index}" value="${el}">${el}</label>
         `
     })
     return structure
@@ -115,6 +115,7 @@ let obtein_property = (array,property)=>array.map(el => el[property]);
 
 //console.log(filter_future_events(reference_date,todos_eventos));
 //filtro categoria.
+//podria haberse hecho con set() no admite repeticiones, luego recorrerlo con for each o convertilo en array con arrayfrom()
 let filter_unic_property = (array) => {
     return array.filter((category, position, array) => {
         return position === array.indexOf(category);

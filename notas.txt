@@ -4,6 +4,7 @@ a href= "./details.html?id=${info.id}"
 
 
 for each para cards, hacerla funcion
+-dejar input.value = ""; elimina la entrada despue del enter.
 agregar dates a las tarjetas
 -verificar las mayusculas en las constantes
 -optimizar funciones
