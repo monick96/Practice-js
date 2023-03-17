@@ -62,3 +62,19 @@ encontrar un evento.
 Los filtros deben estar presentes en las páginas Inicio, Eventos pasados ​​y Eventos futuros.
 
 Al hacer clic en la tarjeta de evento, se debe mostrar el evento en el que se hizo clic en la página Detalles.
+
+
+
+task4
+
+TASK 4: Fecha de entrega , lunes 20/03 a las 13hs y fecha límite martes 21/03 a las 9hs.                                                                                                                                                                                                                         API:https://mindhub-xj03.onrender.com/api/amazing  (en el caso de haber inconvenientes con la API, utilizar el JSON adjuntado en recursos)
+
+- Consignas:
+
+📌 Reemplazar la información que ustedes consumían de data.js (objeto), por la API mencionada anteriormente, o en su defecto el archivo .json por medio de fetch().
+📌 Recuerden que sus funciones lógicas para crear checkboxes  y otras acciones siguen siendo las mismas, lo que cambia es de dónde provienen datos.
+
+📌 La información de la página de estadísticas debe ser dinámica, (datos renderizados desde javascript).
+
+📌 La ESTRUCTURA de la tabla puede estar directamente en HTML. Tengan en cuenta al solicitar ingresos o asistencia, por ejemplo en los eventos futuros no representan la asistencia o los ingresos reales (son estimaciones), datos a tener en cuenta porque consideramos que pueden afectar directamente al resultado obtenido. 
+@Alumnos por si se pierde el mensaje, va a estar fijado, (esquina superior derecha y van al icono 📌, allí se encuentran los mensajes fijados)

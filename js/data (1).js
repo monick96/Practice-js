@@ -1,3 +1,10 @@
+
+
+
+
+
+
+/*
 var data = { 
     "currentDate": "2022-01-01",
     "events": [
@@ -171,7 +178,7 @@ var data = {
       }
     ]
   };
-
+*/
   /*
   /* separa fecha de referencia para comprar futuro y pasado*/
  // fecha_referencia = new Date(data.currentDate)

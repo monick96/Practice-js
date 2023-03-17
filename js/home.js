@@ -1,7 +1,7 @@
 
 const all_events = data.events;
-const contenedor_card = document.getElementById("col-card-home");
-do_and_print(all_events, contenedor_card);
+const container_card = document.getElementById("col-card-home");
+
 //array de categorias
 //let all_categories = obtein_property(all_events,"category");
 //array de categorias(sin repetir)
@@ -10,28 +10,47 @@ let unic_categories = filter_unic_property(obtein_property(all_events, "category
 let container_categories_md = document.getElementById("category_md")
 //capturo select para pantallas <md
 let container_categories_sm = document.getElementById("category-select-sm")
-//pinto categorias <md
-let painted_categories_sm = do_categories_select(unic_categories)
+const FORM_CHECK = document.forms[0];
+const FORM_SEARCH = document.forms[1];
+let input = document.querySelector('#searcher');
+const EVENTS = document.querySelectorAll('.card')// array con todos los names de las cards
+
+//events
+FORM_SEARCH.addEventListener('submit',combined_filter);
+FORM_CHECK.addEventListener('change',combined_filter);
+
+
+
+
+
+//functions
 //pinto categorias >md
 let painted_categories_md = do_categories(unic_categories);
 container_categories_md.innerHTML = painted_categories_md;
-container_categories_sm.innerHTML = painted_categories_sm;
+do_and_print(all_events, container_card);
+
+
+
+
+
+//logs
+console.log(EVENTS[0]);
 ////console.log(all_events);
 //console.log(all_categories);
 //console.log(unic_categories);
 //console.log(document.getElementById('container_category'));
-const FORM_CHECK = document.forms[0];
-const FORM_SELECT = document.forms[1];
 
-const FORM_SEARCH = document.forms[2];
 
-let INPUT = document.querySelector('#searcher');
-const EVENTS = document.querySelectorAll('.card')// array con todos los names de las cards
-console.log(EVENTS[0]);
-let message = document.querySelector('#message');
-console.log(message);
-message.style.display = 'none';
 
+
+
+
+/*
+//pinto categorias <md
+let painted_categories_sm = do_categories_select(unic_categories)
+//container_categories_sm.innerHTML = painted_categories_sm;
+//let message = document.querySelector('#message');
+//console.log(message);
 FORM_SEARCH.addEventListener('submit', (e) => {
 
     e.preventDefault();
@@ -62,7 +81,7 @@ FORM_SEARCH.addEventListener('submit', (e) => {
 
     INPUT.value = '';
 })
-
+*/
 
 
 //console.log(NAME_EVENTS);
@@ -89,11 +108,10 @@ FORM_SELECT.addEventListener("change",(e)=>{
 
 })
 */
-
+/*
 FORM_CHECK.addEventListener('change',(e)=>{
     e.preventDefault();
     console.log(e);
-   
     // Obtener todas las casillas de verificación en el formulario
     // con Array.from(FORM_CHECK.querySelectorAll("input[type='checkbox']")) se puede convertir el node list en array
     let checkboxes = FORM_CHECK.querySelectorAll("input[type='checkbox']");
@@ -139,6 +157,6 @@ FORM_CHECK.addEventListener('change',(e)=>{
 
 })
 
-
+*/
 
 
