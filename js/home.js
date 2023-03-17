@@ -1,11 +1,11 @@
 
-const all_events = data.events;
+//const all_events = data.events;
 const container_card = document.getElementById("col-card-home");
 
 //array de categorias
 //let all_categories = obtein_property(all_events,"category");
 //array de categorias(sin repetir)
-let unic_categories = filter_unic_property(obtein_property(all_events, "category"));
+//let unic_categories = filter_unic_property(obtein_property(all_events, "category"));
 //capturo select para pantallas >md
 let container_categories_md = document.getElementById("category_md")
 //capturo select para pantallas <md
@@ -15,19 +15,36 @@ const FORM_SEARCH = document.forms[1];
 let input = document.querySelector('#searcher');
 const EVENTS = document.querySelectorAll('.card')// array con todos los names de las cards
 
-//events
-FORM_SEARCH.addEventListener('submit',combined_filter);
-FORM_CHECK.addEventListener('change',combined_filter);
+fetch("https://mindhub-xj03.onrender.com/api/amazing") //default method get
+    .then((response) => response.json())
+    .then(data => {
+        let all_events= data.events
+        //console.log(all_events);
+        //events
+        FORM_SEARCH.addEventListener('submit', combined_filter);
+        FORM_CHECK.addEventListener('change', combined_filter);
+
+
+        //functions
+        //array de categorias
+        let all_categories = obtein_property(all_events,"category");
+        //array de categorias(sin repetir)
+        let unic_categories = filter_unic_property(obtein_property(all_events, "category"));
+        //pinto categorias y cards
+        let painted_categories_md = do_categories(unic_categories);
+        container_categories_md.innerHTML = painted_categories_md;
+        do_and_print(all_events, container_card);
+    });
+
+
+
 
 
 
 
 
 //functions
-//pinto categorias >md
-let painted_categories_md = do_categories(unic_categories);
-container_categories_md.innerHTML = painted_categories_md;
-do_and_print(all_events, container_card);
+
 
 
 
@@ -59,7 +76,7 @@ FORM_SEARCH.addEventListener('submit', (e) => {
     let input_value = INPUT.value;
     let input_normalizado = input_value.toLowerCase();
     console.log(input_normalizado);
-    
+
     let foundMatch = false;
     EVENTS.forEach((event) => {
 

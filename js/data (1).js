@@ -1,3 +1,11 @@
+fetch("https://mindhub-xj03.onrender.com/api/amazing") //default method get
+  .then((response)=>response.json())
+  .then(data=>{
+    all_eventes = data.events
+    curren_day= data.currentDate
+    
+  });
+  
 
 
 
